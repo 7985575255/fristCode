@@ -29,17 +29,17 @@
       <li class="list-group-item">Item 5</li>
       <li class="list-group-item">Item 6</li>
     </ul>
-   </div>
+ </div>
   </div>
 <script>
-    let seconditems=document.querySelector('.list-group-item:nth-child(2)');
-    seconditems.style.backgroundColor='green';
-    let thirditem=document.querySelector('.list-group-item:nth-child(3)');
-    thirditem.style.display='none';
-    let odd=document.querySelectorAll('li:nth-child(odd)');
-    for(let i=0; i<odd.length; i++){
-        odd[i].style.background='green'
-    }
+let newDiv=document.createElement('div');
+newDiv.className='hellow';
+newDiv.id='hellow1';
+let newDivtext=document.createTextNode('<h1>How are you arjun verma</h1>');
+newDiv.appendChild(newDivtext)
+console.log(newDiv)
+
 </script>
+
 </body>
 </html>
