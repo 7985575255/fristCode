@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form{
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+    </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+    <title>Document</title>
+</head>
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+          <h1 id="header-title">Booking Apoiment App</h1>
+        </div>
+      </header>
+
+      <form action="" class="form" onsubmit="storeDataInLocal(event)">
+        <label for="name">FullName :-</label> 
+        <input type="text" name="name" placeholder="FullName" class="name" required><br><br>
+        <label for="password">Password :-</label>
+        <input type="password" name="psssword" id="password" placeholder="Password" required><br>
+        <button id="submit">Submit</button>
+      </form>
+   
+      <script src="form.js"></script>
+<!-- <script>
+    function storeDataInLocal(event){
+      event.preventDefault();
+      console.log("you are submit the form");
+    }
+</script> -->
+</body>
+</html>
