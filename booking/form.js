@@ -1,10 +1,15 @@
 
+let form=document.querySelector('.form');
 
-function storeDataInLocal(event){
+form.addEventListener('submit', (event) =>{
     event.preventDefault();
     let name=document.querySelector('.name').value;
     let password=document.querySelector('#password').value;
+    const obj={
+        name,
+        password
+    }
     console.log(name);
-    localStorage.setItem('Name',name);
-    localStorage.setItem('Password',password);
-}
+    localStorage.setItem(name,JSON.stringify(obj));
+    
+})
