@@ -1,15 +1,23 @@
 
 let form=document.querySelector('.form');
 
-form.addEventListener('submit', (event) =>{
+
+form.addEventListener('submit', (event)=>{
     event.preventDefault();
     let name=document.querySelector('.name').value;
-    let password=document.querySelector('#password').value;
-    const obj={
+    let email=document.querySelector('#email').value;
+    let number=document.querySelector('#number').value;
+    let obj={
         name,
-        password
+        email,
+        number
     }
-    console.log(name);
-    localStorage.setItem(name,JSON.stringify(obj));
-    
+    localStorage.setItem(obj.email, JSON.stringify(obj));
+    showOnscreen(obj);
 })
+function showOnscreen(obj){
+    let parentEle=document.querySelector('#userDeatils');
+    let childEle=document.createElement('li');
+    childEle.innerText=`${obj.name}-${obj.email}-${obj.number}`;
+    parentEle.appendChild(childEle);
+}

@@ -20,20 +20,19 @@
         </div>
       </header>
 
-      <form action="" class="form" onsubmit="storeDataInLocal(event)">
+      <form class="form">
         <label for="name">FullName :-</label> 
         <input type="text" name="name" placeholder="FullName" class="name" required><br><br>
-        <label for="password">Password :-</label>
-        <input type="password" name="psssword" id="password" placeholder="Password" required><br>
+        <label for="email">Email :-</label>
+        <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+        <label for="number">Phone Number :-</label>
+        <input type="text" id="number" placeholder="Phone Number" required><br>
         <button id="submit">Submit</button>
       </form>
+      <ul id="userDeatils">
+        
+      </ul>
    
       <script src="form.js"></script>
-<!-- <script>
-    function storeDataInLocal(event){
-      event.preventDefault();
-      console.log("you are submit the form");
-    }
-</script> -->
 </body>
 </html>
