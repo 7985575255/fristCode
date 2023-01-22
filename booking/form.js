@@ -23,6 +23,17 @@ delButton.value='delete';
     localStorage.removeItem(obj.email);
     parentEle.removeChild(childEle);
    }
+   let editButton=document.createElement('input');
+   editButton.value='edit';
+   editButton.type='button';
+   editButton.onclick=()=>{
+    localStorage.removeItem(obj.email);
+    parentEle.removeChild(childEle);
+    document.querySelector('.name').value=obj.name;
+    document.querySelector('#email').value=obj.email;
+    document.querySelector('#number').value=obj.number;
+   }
+childEle.appendChild(editButton);
 childEle.appendChild(delButton);
 parentEle.appendChild(childEle);
 })
